@@ -24,6 +24,8 @@ $config = require "./phps/config.php";
 include includeLib("router");
 // 加载视图库
 include includeLib("view");
+//加载数据库
+include includeLib("data");
 
 // 弹出提示框
 function alert($msg)
