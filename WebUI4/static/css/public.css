@@ -1,0 +1,92 @@
+body{
+    padding-top: 80px;
+    background-color: rgb(239, 239, 239);
+}
+.nav-item a:visited,.nav-item a:link,.navbar-brand{
+    color: rgb(75, 64, 64);
+    font-weight: 600;
+}
+.nav-item a:hover,.navbar-brand:hover{
+    color: black;
+    font-weight: 800;
+    text-shadow: 1px 2px 2px gainsboro;
+}
+.main .abox{
+    background: rgba(255,255,255,0.9);
+    min-height: 100px;
+    padding: 5px;
+    height: 100%;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+.row{
+    margin-top: 8px;
+    min-height: 100px;
+}
+
+.problemjump{
+    padding: 15px;
+    height: 150px;
+}
+
+.problemjump input {
+    max-width: 95%;
+    border:1px solid #0e90d2;
+    margin-bottom: 2px;
+}
+
+.thint{
+    width: 50px;
+}
+.mthint{
+    width: 100px;
+}
+
+.footbar {
+    text-align: center;
+    background: none;
+}
+
+.hr {
+    border: 0;
+    font-size: 12px;
+    padding: 10px 0;
+    position: relative;
+    background: none;
+}
+
+.hr::before {
+    content: "<?=$config['name']?>";
+    position: absolute;
+    padding: 0 10px;
+    line-height: 1px;
+    border: solid #9f9f9f;
+    border-width: 0 100vw;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-pos{
+    position: fixed;
+    right: calc(50vw - 200px);
+    z-index: 9999;
+    top: 0;
+    overflow: auto;
+    max-height: 25vh;
+    width: 400px;
+}
+
+.right-pos{
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+    top: 0;
+    overflow: auto;
+    max-height: 99vh;
+    scrollbar-width: 2px;
+}
+.right-pos::-webkit-scrollbar{
+    width: 2px;
+}
